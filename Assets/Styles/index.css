@@ -57,6 +57,20 @@ body{
     margin-right: 16px;
 }
 
+.mobile-only{
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .mobile-hidden{
+        display: none;
+    }
+
+    .mobile-only{
+        display: flex;
+    }
+}
+
 a.red-text{
     color: #F82C2C;
     font-size: 18px;
@@ -85,25 +99,49 @@ header{
     }
 
 /* Logos Styles */
-    .logos-container .clarifion-logo{
+    .logos-container{
+        height: 96px;
+    }
+
+    .logos-subcontainer .clarifion-logo{
         width: 192px;
         height: 36px;
     }
 
-    .logos-container .McAfee-logo{
+    .logos-subcontainer .McAfee-logo{
         width: 88px;
         height: 32px;
         margin-right: 32px ;
     }
 
-    .logos-container .norton-logo{
+    .logos-subcontainer .norton-logo{
         width: 82px;
         height: 32px;
+    }
+
+    @media (max-width: 576px){
+        .logos-subcontainer .clarifion-logo{
+            width: 100px;
+            height: 18px;
+        }
+    
+        .logos-subcontainer .McAfee-logo{
+            width: 50px;
+            height: 18px;
+            margin-right: 16px ;
+        }
+    
+        .logos-subcontainer .norton-logo{
+            width: 50px;
+            height: 19px;
+        }
     }
 
 /* Order Progress */
 div.order-progress-container{
     margin: -28px 0 45px 0;
+    flex-direction: column;
+    align-items: center;
 }
 
 div.order-progress-container span{
@@ -120,9 +158,28 @@ div.order-progress-container .lorem-ipsum{
     color: #4D5254;
 }
 
+@media (max-width: 576px){
+    div.order-progress-container{
+        margin: -20px 0 20px 0;
+    }
+
+    div.order-progress-container .order-progress-text{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    div.order-progress-container .lorem-ipsum{
+        font-size: 17px;
+        text-align: center;
+    }
+}
+
 /* Steps */
 .steps-container{
     margin: 0 0 70px 0;
+    justify-content: space-evenly;
+    align-content: center;
 }
 
 .steps-container .step{
@@ -166,6 +223,39 @@ div.order-progress-container .lorem-ipsum{
     .steps-container .step .pending-circle{
         border: 2px solid #2C7EF8;
     }
+
+@media (max-width: 576px){
+    .steps-container{
+        margin: 0 0 25px 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .steps-container .step{
+        margin: 5px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps-container .step .circle{
+        margin-right: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .steps-container .step .mobile-text{
+        font-size: 12px;
+    }
+
+    .steps-container .step .circle > span{
+        font-size: 13px;
+    }
+
+    .steps-container .step .circle > svg{
+        width: 8px;
+        height: 8px;
+    }
+}
 
 /* Product info */
 .clarifion-product .product-img{
@@ -290,6 +380,17 @@ div.order-progress-container .lorem-ipsum{
         height: 20px;
         margin-left: 18px;
     }
+
+@media (max-width: 576px){
+    .clarifion-product .col-p2{
+        display: none;
+    }
+
+    .clarifion-product .col-p3{
+        width: 100%;
+        margin: 0 15px;
+    }
+}
 
 /* Cards info */
     .cards-info-container .cards-info{
