@@ -1,0 +1,361 @@
+@font-face {
+    font-family: Manrope;
+    src: url('../Fonts/Manrope/Manrope-VariableFont_wght.ttf') format('embedded-opentype'), 
+        url('../Fonts/Manrope/Manrope-VariableFont_wght.ttf') format('woff2'),             
+        url('../Fonts/Manrope/Manrope-VariableFont_wght.ttf') format('woff'),              
+        url('../Fonts/Manrope/Manrope-VariableFont_wght.ttf') format('truetype'),          
+        url('../Fonts/Manrope/Manrope-VariableFont_wght.ttf') format('svg');
+}
+
+body{
+    font-family: Manrope;
+    min-height: 100vh;
+}
+
+/* Personalized */
+.offset-p1{
+    margin-left: 4.6%;
+}
+
+.offset-r-1{
+    margin-right: 8.33333333%;
+}
+
+.col-p1{
+    flex: 0 0 auto;
+    width: 90.8%;
+}
+
+.col-p2{
+    flex: 0 0 auto;
+    width: 43%;
+}
+
+.col-p3{
+    flex: 0 0 auto;
+    width: 40.33333333%;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.blue-text{
+    color: #2C7EF8;
+}
+
+.w-fit{
+    width: fit-content;
+}
+
+.star{
+    width: fit-content;
+    padding: 0 1.4px;
+}
+
+.lock-icon{
+    margin-right: 16px;
+}
+
+a.red-text{
+    color: #F82C2C;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Header Styles */
+header{
+    background-color: #252F3D;
+    font-size: 12px;
+}
+
+    header .row{
+        height: 50px;
+    }
+
+    header .row .header-icon{
+        margin: 0 7px 0 0;
+    }
+
+    header div span{
+        color: white;
+        width: fit-content !important;
+        display: flex;
+        align-items: flex-end;
+    }
+
+/* Logos Styles */
+    .logos-container .clarifion-logo{
+        width: 192px;
+        height: 36px;
+    }
+
+    .logos-container .McAfee-logo{
+        width: 88px;
+        height: 32px;
+        margin-right: 32px ;
+    }
+
+    .logos-container .norton-logo{
+        width: 82px;
+        height: 32px;
+    }
+
+/* Order Progress */
+div.order-progress-container{
+    margin: -28px 0 45px 0;
+}
+
+div.order-progress-container span{
+    width: fit-content;
+    padding: 0;
+}
+
+div.order-progress-container .order-progress-text{
+    font-size: 48px;
+}
+
+div.order-progress-container .lorem-ipsum{
+    font-size: 24px;
+    color: #4D5254;
+}
+
+/* Steps */
+.steps-container{
+    margin: 0 0 70px 0;
+}
+
+.steps-container .step{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+    .steps-container span{
+        font-size: 20px;
+    }
+
+    .steps-container .step .circle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .steps-container .step .inProgress-circle span{
+        color: white;
+    }
+
+    .steps-container .step .pending-circle span{
+        color: #2C7EF8;
+    }
+
+    .steps-container .step .success-circle{
+        background-color: #85BF55;
+        border: 2px solid #85BF55;
+    }
+
+    .steps-container .step .inProgress-circle{
+        background-color: #2C7EF8;
+        border: 2px solid #2C7EF8;
+    }
+
+    .steps-container .step .pending-circle{
+        border: 2px solid #2C7EF8;
+    }
+
+/* Product info */
+.clarifion-product .product-img{
+    width: 575px;
+    height: 591px;
+}
+
+.clarifion-product .product-title{
+    font-size: 32px;
+}
+
+.clarifion-product .product-description{
+    padding: 15px 0;
+}
+
+    .clarifion-product .product-description .description-img{
+        background-color: #2C7EF8;
+        border-radius: 8%;
+        width: 134px;
+        height: 134px;
+    }
+
+        .clarifion-product .product-description .description-img img{
+            height: 134px;
+            width: 134px;
+        }
+
+    .clarifion-product .product-description .description-text,
+    .clarifion-product .product-features-list .feature-text{
+        color: #4D5254;
+        font-size: 16px;
+    }
+
+    .clarifion-product .product-description .stars{
+        padding-left: 22px;
+        width: 100%;
+    }
+    
+        
+
+    .clarifion-product .product-description .description-title{
+        color: #000;
+        font-size: 20px;
+        width: fit-content;
+    }
+
+    .clarifion-product .product-description .prices{
+        width: fit-content;
+    }
+
+    .clarifion-product .product-description .prices span:nth-of-type(2n+1){
+        color: #969696;
+        font-size: 16px;
+        text-decoration: line-through;
+        margin-right: 10px;
+    }
+
+    .clarifion-product .product-description .prices span:nth-of-type(2n+2){
+        color: #2C7EF8;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .clarifion-product .product-description .available-circle{
+        background-color: #2C7EF8;
+        box-shadow: 0 0 16px 1px #2C7EF8;
+        border-radius: 50%;
+        width: 8px;
+        height: 8.53px;
+        margin-left: 2px;
+    }
+
+    .clarifion-product .product-description .stock-text{
+        font-size: 16px;
+        font-weight: 300;
+        color: #37465A;
+        width: fit-content;
+    }
+
+    .clarifion-product .product-features-list .feature > svg{
+        margin-right: 12px;
+    }
+
+    .clarifion-product .product-features-list .feature{
+        margin: 13px 0;
+    }
+
+    .clarifion-product .product-discount-promo{
+        border-radius: 10px;
+        background-color: #EDF3FD;
+        height: 56px;
+    }
+
+        .clarifion-product .product-discount-promo .discount-icon{
+            background-color: #2C7EF8;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+        }
+
+        .clarifion-product .product-discount-promo .discount-text{
+            font-size: 16px;
+            color: #000;
+        }
+
+    .clarifion-product .claim-discount-button{
+        border-radius: 30px;
+        background-color: #59AE43;
+        height: 59px;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    .clarifion-product .claim-discount-button .discount-button-text{
+        font-size: 20px;
+        font-weight: 700;
+        color:#FFF; 
+    }
+
+    .clarifion-product .claim-discount-button .discount-arrow-right{
+        width: 20px;
+        height: 20px;
+        margin-left: 18px;
+    }
+
+/* Cards info */
+    .cards-info-container .cards-info{
+        border: 1px solid #CFCFCF;
+        border-radius: 5px;
+        height: 33px;
+        width: 530px;
+    }
+
+    .cards-info-container .cards-info span{
+        color: #4D5254;
+        font-size: 12px;
+    }
+
+    .cards-info .card-logo{
+        width: 24px;
+        height: 14px;
+    }
+
+/* Guarante container */
+.guarantee-container .guarantee-logo{
+    width: 88px;
+    height: 88px;
+    margin-right: 22px;
+}
+
+.guarantee-container .guarantee-text{
+    color: #4D5254;
+}
+
+/* Commentary section */
+.commentary-section{
+    padding: 5px 10px;
+}
+
+.commentary-container{
+    padding: 10px 5px;
+}
+
+.commentary-container .comment-text{
+    color: #4D5254;
+    padding: 5px;
+}
+
+.commentary-container .author-img{
+    height: 48px;
+    width: 48px;
+}
+
+    .commentary-container .author-info .author-name{
+        color: #333333;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .commentary-container .author-info .verified-check{
+        
+    }
+
+/* Footer */
+footer{
+    height: 88px;
+    background: #252F3D;
+    margin-top: auto;
+}
+
+    footer span{
+        color: #FFF;
+    }
