@@ -61,6 +61,12 @@ body{
     display: none;
 }
 
+a.red-text{
+    color: #F82C2C;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 @media (max-width: 576px) {
     .mobile-hidden{
         display: none;
@@ -69,12 +75,10 @@ body{
     .mobile-only{
         display: flex;
     }
-}
 
-a.red-text{
-    color: #F82C2C;
-    font-size: 18px;
-    font-weight: 500;
+    a.red-text{
+        font-size: 12px;
+    }
 }
 
 /* Header Styles */
@@ -298,6 +302,7 @@ div.order-progress-container .lorem-ipsum{
         text-align: center;
         color: #4D5254;
         font-size: 12px;
+        margin: 10px 0 0 0;
     }
 
     .clarifion-product .product-description .stars{
@@ -356,6 +361,7 @@ div.order-progress-container .lorem-ipsum{
         border-radius: 10px;
         background-color: #EDF3FD;
         height: 56px;
+        align-items: center;
     }
 
         .clarifion-product .product-discount-promo .discount-icon{
@@ -441,6 +447,51 @@ div.order-progress-container .lorem-ipsum{
         .clarifion-product .product-description .mobile-description-text{
             display: block;
         }
+
+    .clarifion-product .product-description .stars .star{
+        width: 14px;
+        height: 14px;
+        padding: 0 1.4px;
+    }
+
+    .clarifion-product .product-description .stars{
+        margin: 5px 0 5px -10px;
+    }
+
+    .clarifion-product .product-description .available-circle{
+        /*box-shadow: 0 0 16px 1px #2C7EF8;*/
+        width: 6px;
+        height: 6.53px;
+    }
+
+    .clarifion-product .product-description .stock-text{
+        font-size: 12px;
+        padding: 0 7px;
+    }
+
+    .clarifion-product .product-features-list{
+        padding: 0 10px;
+    } 
+
+    .clarifion-product .product-features-list .feature > svg{
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    } 
+
+    .clarifion-product .product-features-list .feature .feature-text{
+        font-size: 12px;
+    }
+
+    .clarifion-product .product-discount-promo{
+        flex-wrap: nowrap;
+        width: 350px;
+    }
+
+    .clarifion-product .product-discount-promo .discount-text {
+        font-size: 14px;
+        width: 300px;
+    }
 }
 
 /* Cards info */
@@ -456,10 +507,58 @@ div.order-progress-container .lorem-ipsum{
         font-size: 12px;
     }
 
+    .cards-info-container .cards-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards-subinfo{
+        display: flex;
+        align-items: center;
+    }
+
     .cards-info .card-logo{
         width: 24px;
         height: 14px;
     }
+
+    .card-logos-container{
+        display: flex;
+        justify-content: space-between;
+        width: 34%;
+    }
+
+@media (max-width: 576px){
+    .cards-info-container .cards-info{
+        height: 71px;
+        width: 321px;
+    }
+
+    .cards-info{
+        flex-direction: column;
+    }
+
+    .cards-info-container .cards-info span{
+        font-size: 10px;
+    }
+
+    .cards-subinfo{
+        margin-bottom: 5px;
+    }
+
+    .card-logos-container{
+        width: 55%;
+        margin-top: 5px;
+    }
+}
+
+/* Comment guarantee section */
+@media (max-width: 576px){
+    .comment-guarantee-section{
+        flex-direction: column-reverse;
+    }
+}
 
 /* Guarante container */
 .guarantee-container .guarantee-logo{
@@ -470,6 +569,23 @@ div.order-progress-container .lorem-ipsum{
 
 .guarantee-container .guarantee-text{
     color: #4D5254;
+}
+
+@media (max-width: 576px){
+    .guarantee-container{
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .guarantee-container .guarantee-logo{
+        width: 48px;
+        height: 48px;
+        margin-right: 10px;
+    }
+    
+    .guarantee-container .guarantee-text{
+        font-size: 12px;
+    }
 }
 
 /* Commentary section */
@@ -501,13 +617,33 @@ div.order-progress-container .lorem-ipsum{
         
     }
 
+@media (max-width: 576px){
+    .commentary-section{
+        display: none;
+    }
+}
+
 /* Footer */
 footer{
     height: 88px;
     background: #252F3D;
     margin-top: auto;
+    align-items: center;
+    justify-content: space-between;
 }
 
     footer span{
         color: #FFF;
     }
+
+@media (max-width: 576px){
+    footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 102px;
+    }
+    
+        footer span{
+            font-size: 12px;
+        }
+}
